@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -13,10 +14,27 @@ import { Ngfor3Component } from './components/ngfor/ngfor3/ngfor3.component';
 import { Bind1Component } from './components/bindcomponents/bind1/bind1.component';
 import { Bind2Component } from './components/bindcomponents/bind2/bind2.component';
 import { Bind2waybindComponent } from './components/bindcomponents/bind2waybind/bind2waybind.component';
+import { FatherComponent } from './components/fatherchild/father/father.component';
+import { ChildComponent } from './components/fatherchild/child/child.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, TstohtmlComponent, Ngif1Component, Ngif2Component, Ngif3Component, Ngfor1Component, Ngfor2Component, Ngfor3Component, Bind1Component, Bind2Component, Bind2waybindComponent],
-  imports: [BrowserModule],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    TstohtmlComponent,
+    Ngif1Component,
+    Ngif2Component,
+    Ngif3Component,
+    Ngfor1Component,
+    Ngfor2Component,
+    Ngfor3Component,
+    Bind1Component,
+    Bind2Component,
+    Bind2waybindComponent,
+    FatherComponent,
+    ChildComponent,
+  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

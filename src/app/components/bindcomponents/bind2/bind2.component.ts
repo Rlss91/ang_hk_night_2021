@@ -12,4 +12,8 @@ export class Bind2Component implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  handleBtnClick() {
+    this.title = 'you pressed on the btn';
+  }
 }
