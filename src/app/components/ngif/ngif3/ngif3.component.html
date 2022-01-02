@@ -1,0 +1,16 @@
+<div class="card">
+  <h5 class="card-header">*ngIf 3</h5>
+  <div class="card-body">
+    <div *ngIf="isVisible; then thenBlock; else elseBlock">HIDDEN</div>
+    <ng-template #thenBlock>
+      <h5 class="card-title">Special title treatment</h5></ng-template
+    >
+    <ng-template #elseBlock>
+      <h5 class="card-title">
+        Special title will be visible untill we will press on the button
+      </h5>
+    </ng-template>
+    <p class="card-text">click on the button to see the title</p>
+    <button class="btn btn-primary" (click)="handleBtnClick()">click me</button>
+  </div>
+</div>
