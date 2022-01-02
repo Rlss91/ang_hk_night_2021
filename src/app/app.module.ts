@@ -16,6 +16,9 @@ import { Bind2Component } from './components/bindcomponents/bind2/bind2.componen
 import { Bind2waybindComponent } from './components/bindcomponents/bind2waybind/bind2waybind.component';
 import { FatherComponent } from './components/fatherchild/father/father.component';
 import { ChildComponent } from './components/fatherchild/child/child.component';
+import { NgClassDirComponent } from './components/attributeDirectives/ng-class-dir/ng-class-dir.component';
+import { NgStyleDirComponent } from './components/attributeDirectives/ng-style-dir/ng-style-dir.component';
+import { NgswitchComponent } from './components/ngswitch/ngswitch.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,9 @@ import { ChildComponent } from './components/fatherchild/child/child.component';
     Bind2waybindComponent,
     FatherComponent,
     ChildComponent,
+    NgClassDirComponent,
+    NgStyleDirComponent,
+    NgswitchComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

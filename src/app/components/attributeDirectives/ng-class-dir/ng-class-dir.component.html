@@ -1,0 +1,11 @@
+<div class="card">
+  <h5 class="card-header">NgClass</h5>
+  <div class="card-body">
+    <p [ngClass]="{ red: isAvailable, 'card-text': true }">
+      when you will press on the btn it will toggle the color of this text
+    </p>
+    <button class="btn btn-primary" (click)="handleBtnClick()">
+      click to change color text to red
+    </button>
+  </div>
+</div>
