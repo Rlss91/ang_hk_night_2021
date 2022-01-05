@@ -23,6 +23,10 @@ import { AnimallistComponent } from './components/targil1/animallist/animallist.
 import { AnimalitemComponent } from './components/targil1/animalitem/animalitem.component';
 import { BtnBootstrapComponent } from './components/utils/btn-bootstrap/btn-bootstrap.component';
 import { PipesexampleComponent } from './components/pipesexample/pipesexample.component';
+import { CustomdirectiveDirective } from './directives/customdirective.directive';
+import { CustomdirectivecomponentComponent } from './components/customdirectivecomponent/customdirectivecomponent.component';
+import { CustomedirectiverendererDirective } from './directives/customedirectiverenderer.directive';
+import { CustomedirectivebindDirective } from './directives/customedirectivebind.directive';
 
 @NgModule({
   declarations: [
@@ -47,6 +51,10 @@ import { PipesexampleComponent } from './components/pipesexample/pipesexample.co
     AnimalitemComponent,
     BtnBootstrapComponent,
     PipesexampleComponent,
+    CustomdirectiveDirective,
+    CustomdirectivecomponentComponent,
+    CustomedirectiverendererDirective,
+    CustomedirectivebindDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
