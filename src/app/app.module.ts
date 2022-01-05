@@ -22,6 +22,7 @@ import { NgswitchComponent } from './components/ngswitch/ngswitch.component';
 import { AnimallistComponent } from './components/targil1/animallist/animallist.component';
 import { AnimalitemComponent } from './components/targil1/animalitem/animalitem.component';
 import { BtnBootstrapComponent } from './components/utils/btn-bootstrap/btn-bootstrap.component';
+import { PipesexampleComponent } from './components/pipesexample/pipesexample.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { BtnBootstrapComponent } from './components/utils/btn-bootstrap/btn-boot
     AnimallistComponent,
     AnimalitemComponent,
     BtnBootstrapComponent,
+    PipesexampleComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

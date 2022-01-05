@@ -1,0 +1,27 @@
+<h4>Pipes</h4>
+<div>
+  <span>uppercase</span>
+  <button type="button" class="btn btn-primary">{{ title | uppercase }}</button>
+</div>
+<div>
+  <span>lowercase</span>
+  <button type="button" class="btn btn-primary">{{ title | lowercase }}</button>
+</div>
+<div>
+  <span>titlecase</span>
+  <button type="button" class="btn btn-primary">{{ title | titlecase }}</button>
+</div>
+<div>
+  <span>slice: 1</span>
+  <button type="button" class="btn btn-primary">{{ title | slice: 1 }}</button>
+</div>
+<div>
+  <span>slice: 1:3</span>
+  <button type="button" class="btn btn-primary">
+    {{ title | slice: 1:3 }}
+  </button>
+</div>
+<div *ngIf="name | async">
+  <span>async</span>
+  <button type="button" class="btn btn-primary">{{ name | async }}</button>
+</div>
