@@ -19,6 +19,8 @@ import { ChildComponent } from './components/fatherchild/child/child.component';
 import { NgClassDirComponent } from './components/attributeDirectives/ng-class-dir/ng-class-dir.component';
 import { NgStyleDirComponent } from './components/attributeDirectives/ng-style-dir/ng-style-dir.component';
 import { NgswitchComponent } from './components/ngswitch/ngswitch.component';
+import { AnimallistComponent } from './components/targil1/animallist/animallist.component';
+import { AnimalitemComponent } from './components/targil1/animalitem/animalitem.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { NgswitchComponent } from './components/ngswitch/ngswitch.component';
     NgClassDirComponent,
     NgStyleDirComponent,
     NgswitchComponent,
+    AnimallistComponent,
+    AnimalitemComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
