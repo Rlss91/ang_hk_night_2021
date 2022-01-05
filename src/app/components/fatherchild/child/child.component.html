@@ -1,11 +1,11 @@
 <div class="card">
-  <h5 class="card-header">{{ user.name }}</h5>
+  <h5 class="card-header">{{ userInput.name }}</h5>
   <div class="card-body">
-    <h5 class="card-title">{{ user.email }}</h5>
+    <h5 class="card-title">{{ userInput.email }}</h5>
     <p class="card-text">
       With supporting text below as a natural lead-in to additional content.
     </p>
-    <button class="btn btn-danger" (click)="handleBtnClick(user.id)">
+    <button class="btn btn-danger" (click)="handleBtnClick(userInput.id)">
       Delete
     </button>
   </div>

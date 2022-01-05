@@ -10,7 +10,7 @@
 </div> -->
 <div *ngFor="let user of usersArr">
   <app-child
-    [user]="user"
+    [userInput]="user"
     (onUserSelected)="handeDeleteUser($event)"
   ></app-child>
 </div>

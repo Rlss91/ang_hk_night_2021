@@ -7,10 +7,10 @@ import Users from '../model/users.model';
   styleUrls: ['./child.component.css'],
 })
 export class ChildComponent implements OnInit {
-  @Input() user: Users;
+  @Input() userInput: Users;
   @Output() onUserSelected: EventEmitter<number>;
   constructor() {
-    this.user = {
+    this.userInput = {
       id: 0,
       name: '',
       email: '',
