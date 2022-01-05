@@ -6,7 +6,7 @@
 <ul class="list-group">
   <app-animalitem
     *ngFor="let animal of animalArr"
-    [animalInput]="animal"
     [lineBackgroundColor]="'red'"
-  ></app-animalitem>
+    >{{ animal.name }}</app-animalitem
+  >
 </ul>

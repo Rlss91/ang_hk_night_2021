@@ -7,10 +7,8 @@ import AnimalItemModel from '../model/animal.model';
   styleUrls: ['./animalitem.component.css'],
 })
 export class AnimalitemComponent implements OnInit {
-  @Input() animalInput: AnimalItemModel;
   @Input() lineBackgroundColor: string;
   constructor() {
-    this.animalInput = { name: '' };
     this.lineBackgroundColor = 'transparent';
   }
 
