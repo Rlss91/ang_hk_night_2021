@@ -11,9 +11,9 @@ export interface UserService {
 })
 export class AuthServiceService {
   usersArr: UserService[];
-  userChange: EventEmitter<any>;
+  userChange: EventEmitter<string>;
   constructor() {
-    this.userChange = new EventEmitter<any>();
+    this.userChange = new EventEmitter<string>();
     this.usersArr = [
       { email: 'kenny', password: '1234', isLoggedin: false },
       { email: 'john', password: '1234', isLoggedin: false },
@@ -29,9 +29,11 @@ export class AuthServiceService {
     for (let user of this.usersArr) {
       if (email.toLowerCase() === user.email) {
         if (password === user.password) {
-          user.isLoggedin = true;
+          if (user.isLoggedin == false) {
+            user.isLoggedin = true;
+            this.userChange.emit('userLoggedin');
+          }
           success = true;
-          this.userChange.emit('userChanged');
           break;
         }
       }
@@ -42,8 +44,10 @@ export class AuthServiceService {
   userLogout(email: string): void {
     for (let user of this.usersArr) {
       if (email.toLowerCase() === user.email) {
-        user.isLoggedin = false;
-        this.userChange.emit('userChanged');
+        if (user.isLoggedin == true) {
+          user.isLoggedin = false;
+          this.userChange.emit('userLoggedout');
+        }
         break;
       }
     }

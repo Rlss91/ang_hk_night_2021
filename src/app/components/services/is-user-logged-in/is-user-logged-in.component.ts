@@ -17,11 +17,17 @@ export class IsUserLoggedInComponent implements OnInit {
     this.usersOnline = 0;
     authService.userChange.subscribe((val) => {
       console.log(val);
-      this.usersOnline = 0;
-      for (let user of this.users) {
-        if (user.isLoggedin) {
-          this.usersOnline++;
-        }
+      // this.usersOnline = 0;
+      // for (let user of this.users) {
+      //   if (user.isLoggedin) {
+      //     this.usersOnline++;
+      //   }
+      // }
+      if (val == 'userLoggedin') {
+        this.usersOnline++;
+      }
+      if (val == 'userLoggedout') {
+        this.usersOnline--;
       }
       console.log(this.usersOnline);
     });
