@@ -1,0 +1,13 @@
+<h1 class="mt-2">
+  Online <span class="badge bg-secondary">{{ serverCounter }}</span>
+</h1>
+<ul class="list-group">
+  <li
+    class="list-group-item"
+    aria-current="true"
+    [ngClass]="{ active: server.isOnline }"
+    *ngFor="let server of servers"
+  >
+    {{ server.name }}
+  </li>
+</ul>

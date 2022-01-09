@@ -30,6 +30,8 @@ import { CustomedirectivebindDirective } from './directives/customedirectivebind
 import { IfnotDirective } from './directives/ifnot.directive';
 import { UserLoggedInComponent } from './components/services/user-logged-in/user-logged-in.component';
 import { IsUserLoggedInComponent } from './components/services/is-user-logged-in/is-user-logged-in.component';
+import { ServerStatusComponent } from './components/services/obs/server-status/server-status.component';
+import { ServerChangeStatusComponent } from './components/services/obs/server-change-status/server-change-status.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +63,8 @@ import { IsUserLoggedInComponent } from './components/services/is-user-logged-in
     IfnotDirective,
     UserLoggedInComponent,
     IsUserLoggedInComponent,
+    ServerStatusComponent,
+    ServerChangeStatusComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
