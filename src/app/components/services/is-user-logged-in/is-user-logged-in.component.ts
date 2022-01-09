@@ -11,8 +11,20 @@ import {
 })
 export class IsUserLoggedInComponent implements OnInit {
   users: UserService[];
+  usersOnline: number;
   constructor(private authService: AuthServiceService) {
     this.users = this.authService.getUsers();
+    this.usersOnline = 0;
+    authService.userChange.subscribe((val) => {
+      console.log(val);
+      this.usersOnline = 0;
+      for (let user of this.users) {
+        if (user.isLoggedin) {
+          this.usersOnline++;
+        }
+      }
+      console.log(this.usersOnline);
+    });
   }
 
   ngOnInit(): void {}

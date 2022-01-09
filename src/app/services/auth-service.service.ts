@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, EventEmitter } from '@angular/core';
 
 export interface UserService {
   email: string;
@@ -11,7 +11,9 @@ export interface UserService {
 })
 export class AuthServiceService {
   usersArr: UserService[];
+  userChange: EventEmitter<any>;
   constructor() {
+    this.userChange = new EventEmitter<any>();
     this.usersArr = [
       { email: 'kenny', password: '1234', isLoggedin: false },
       { email: 'john', password: '1234', isLoggedin: false },
@@ -29,6 +31,7 @@ export class AuthServiceService {
         if (password === user.password) {
           user.isLoggedin = true;
           success = true;
+          this.userChange.emit('userChanged');
           break;
         }
       }
@@ -40,6 +43,7 @@ export class AuthServiceService {
     for (let user of this.usersArr) {
       if (email.toLowerCase() === user.email) {
         user.isLoggedin = false;
+        this.userChange.emit('userChanged');
         break;
       }
     }
