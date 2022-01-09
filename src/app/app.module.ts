@@ -28,6 +28,8 @@ import { CustomdirectivecomponentComponent } from './components/customdirectivec
 import { CustomedirectiverendererDirective } from './directives/customedirectiverenderer.directive';
 import { CustomedirectivebindDirective } from './directives/customedirectivebind.directive';
 import { IfnotDirective } from './directives/ifnot.directive';
+import { UserLoggedInComponent } from './components/services/user-logged-in/user-logged-in.component';
+import { IsUserLoggedInComponent } from './components/services/is-user-logged-in/is-user-logged-in.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +59,8 @@ import { IfnotDirective } from './directives/ifnot.directive';
     CustomedirectiverendererDirective,
     CustomedirectivebindDirective,
     IfnotDirective,
+    UserLoggedInComponent,
+    IsUserLoggedInComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
