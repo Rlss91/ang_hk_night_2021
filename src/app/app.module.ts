@@ -27,6 +27,7 @@ import { CustomdirectiveDirective } from './directives/customdirective.directive
 import { CustomdirectivecomponentComponent } from './components/customdirectivecomponent/customdirectivecomponent.component';
 import { CustomedirectiverendererDirective } from './directives/customedirectiverenderer.directive';
 import { CustomedirectivebindDirective } from './directives/customedirectivebind.directive';
+import { IfnotDirective } from './directives/ifnot.directive';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { CustomedirectivebindDirective } from './directives/customedirectivebind
     CustomdirectivecomponentComponent,
     CustomedirectiverendererDirective,
     CustomedirectivebindDirective,
+    IfnotDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
