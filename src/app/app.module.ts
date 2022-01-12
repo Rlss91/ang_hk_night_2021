@@ -32,6 +32,10 @@ import { UserLoggedInComponent } from './components/services/user-logged-in/user
 import { IsUserLoggedInComponent } from './components/services/is-user-logged-in/is-user-logged-in.component';
 import { ServerStatusComponent } from './components/services/obs/server-status/server-status.component';
 import { ServerChangeStatusComponent } from './components/services/obs/server-change-status/server-change-status.component';
+import { Comp1Component } from './components/targilServices/comp1/comp1.component';
+import { Comp2Component } from './components/targilServices/comp2/comp2.component';
+import { LifecycleHooksComponent } from './components/lifecycle-hooks/lifecycle-hooks.component';
+import { LifecycleHooksChildComponent } from './components/lifecycle-hooks-child/lifecycle-hooks-child.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +69,10 @@ import { ServerChangeStatusComponent } from './components/services/obs/server-ch
     IsUserLoggedInComponent,
     ServerStatusComponent,
     ServerChangeStatusComponent,
+    Comp1Component,
+    Comp2Component,
+    LifecycleHooksComponent,
+    LifecycleHooksChildComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

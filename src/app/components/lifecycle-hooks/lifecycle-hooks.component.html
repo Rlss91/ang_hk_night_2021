@@ -1,0 +1,10 @@
+<p>lifecycle-hooks works!</p>
+<h3>{{ txt }}</h3>
+<input type="text" name="" id="" [(ngModel)]="txt" />
+<button type="button" class="btn btn-primary" (click)="handleBtnClick()">
+  Primary
+</button>
+<app-lifecycle-hooks-child
+  *ngIf="isAvailable"
+  changeSomething="test"
+></app-lifecycle-hooks-child>
