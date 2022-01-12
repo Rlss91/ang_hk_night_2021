@@ -36,6 +36,10 @@ import { Comp1Component } from './components/targilServices/comp1/comp1.componen
 import { Comp2Component } from './components/targilServices/comp2/comp2.component';
 import { LifecycleHooksComponent } from './components/lifecycle-hooks/lifecycle-hooks.component';
 import { LifecycleHooksChildComponent } from './components/lifecycle-hooks-child/lifecycle-hooks-child.component';
+import { TimecompComponent } from './components/targil2/timecomp/timecomp.component';
+import { AnimalslistComponent } from './components/targil2/animalslist/animalslist.component';
+import { AnimalsnewComponent } from './components/targil2/animalsnew/animalsnew.component';
+import { AnimalpageComponent } from './components/targil2/animalpage/animalpage.component';
 
 @NgModule({
   declarations: [
@@ -73,6 +77,10 @@ import { LifecycleHooksChildComponent } from './components/lifecycle-hooks-child
     Comp2Component,
     LifecycleHooksComponent,
     LifecycleHooksChildComponent,
+    TimecompComponent,
+    AnimalslistComponent,
+    AnimalsnewComponent,
+    AnimalpageComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

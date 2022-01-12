@@ -1,0 +1,10 @@
+<div class="list-group mt-3">
+  <button
+    type="button"
+    class="list-group-item list-group-item-action"
+    (click)="handleRemoveAnimal(animal)"
+    *ngFor="let animal of animalsArr"
+  >
+    {{ animal }}
+  </button>
+</div>

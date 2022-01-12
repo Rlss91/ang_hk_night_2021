@@ -1,0 +1,13 @@
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">New animal</label>
+  <input
+    type="text"
+    class="form-control"
+    id="exampleFormControlInput1"
+    placeholder="example: dog"
+    [(ngModel)]="animalInput"
+  />
+</div>
+<button type="button" class="btn btn-info" (click)="handleBtnClick()">
+  Add new animal
+</button>
