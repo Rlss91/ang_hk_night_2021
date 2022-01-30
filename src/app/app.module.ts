@@ -40,6 +40,11 @@ import { TimecompComponent } from './components/targil2/timecomp/timecomp.compon
 import { AnimalslistComponent } from './components/targil2/animalslist/animalslist.component';
 import { AnimalsnewComponent } from './components/targil2/animalsnew/animalsnew.component';
 import { AnimalpageComponent } from './components/targil2/animalpage/animalpage.component';
+import { Father2Component } from './components/fatherchild2/father2/father2.component';
+import { Child2Component } from './components/fatherchild2/child2/child2.component';
+import { SubjectContainerComponent } from './components/subject-container/subject-container.component';
+import { SubjectChild1Component } from './components/subject-child1/subject-child1.component';
+import { SubjectChild2Component } from './components/subject-child2/subject-child2.component';
 
 @NgModule({
   declarations: [
@@ -81,6 +86,11 @@ import { AnimalpageComponent } from './components/targil2/animalpage/animalpage.
     AnimalslistComponent,
     AnimalsnewComponent,
     AnimalpageComponent,
+    Father2Component,
+    Child2Component,
+    SubjectContainerComponent,
+    SubjectChild1Component,
+    SubjectChild2Component,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

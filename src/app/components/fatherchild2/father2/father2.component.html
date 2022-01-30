@@ -1,0 +1,6 @@
+<p>father2 works!</p>
+<app-child2
+  *ngFor="let userItem of usersArr"
+  [user]="userItem"
+  (onDelete)="handleDelete($event)"
+></app-child2>
